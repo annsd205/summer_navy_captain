@@ -10,3 +10,5 @@ jobs:
       input_root: .
       out_dir: __packfile
       compact: false
+    secrets:
+      personal_access_token: ${{ secrets.AUTO_RP_CONVERTER_TOKEN }}
