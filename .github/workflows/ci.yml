@@ -1,0 +1,12 @@
+name: Build Packs
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: OWNER/auto-rp-converter/.github/workflows/build-pack.yml@main
+    with:
+      input_root: .
+      out_dir: __packfile
+      compact: false
